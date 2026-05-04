@@ -1,0 +1,72 @@
+# ══════════════════════════════════════════════════
+#  TabRoles  -  config.yml
+# ══════════════════════════════════════════════════
+#
+#  Color codes use & followed by a Minecraft color code:
+#    &0 Black    &1 Dark Blue   &2 Dark Green  &3 Dark Aqua
+#    &4 Dark Red &5 Dark Purple &6 Gold        &7 Gray
+#    &8 Dark Gray &9 Blue       &a Green       &b Aqua
+#    &c Red      &d Light Purple &e Yellow     &f White
+#    &l Bold  &o Italic  &n Underline  &m Strike  &r Reset
+#
+#  bracket:  The full prefix string. Supports placeholders:
+#    %color%  →  the role's color value
+#    %label%  →  the role's display value
+#
+#  priority:  Lower number = higher up in Tab list (1 is top).
+#
+#  name-color:  Color applied to the player's name in Tab.
+#               Defaults to the role color if not set.
+#
+# ══════════════════════════════════════════════════
+
+roles:
+
+  OWNER:
+    display: "OWNER"
+    color: "&c"           # Red
+    name-color: "&c"
+    priority: 1
+    bracket: "&8[&c%label%&8]"
+
+  ADMIN:
+    display: "ADMIN"
+    color: "&4"           # Dark Red
+    name-color: "&4"
+    priority: 2
+    bracket: "&8[&4%label%&8]"
+
+  MANAGER:
+    display: "MANAGER"
+    color: "&6"           # Gold
+    name-color: "&6"
+    priority: 3
+    bracket: "&8[&6%label%&8]"
+
+  MOD:
+    display: "MOD"
+    color: "&2"           # Dark Green
+    name-color: "&2"
+    priority: 4
+    bracket: "&8[&2%label%&8]"
+
+  HELPER:
+    display: "HELPER"
+    color: "&a"           # Green
+    name-color: "&a"
+    priority: 5
+    bracket: "&8[&a%label%&8]"
+
+  VIP:
+    display: "VIP"
+    color: "&e"           # Yellow
+    name-color: "&e"
+    priority: 6
+    bracket: "&8[&e%label%&8]"
+
+  MEMBER:
+    display: "MEMBER"
+    color: "&7"           # Gray
+    name-color: "&7"
+    priority: 50
+    bracket: "&8[&7%label%&8]"

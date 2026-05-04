@@ -1,0 +1,17 @@
+name: TabRoles
+version: 1.0.0
+main: com.tabroles.plugin.TabRoles
+api-version: 1.12
+author: TabRoles
+description: Assign custom coloured roles that appear in the Tab list. Eaglercraft compatible.
+
+commands:
+  role:
+    description: Manage player roles shown in Tab
+    usage: /role <set|remove|check|list|reload>
+    permission: tabroles.admin
+
+permissions:
+  tabroles.admin:
+    description: Full access to /role commands
+    default: op
